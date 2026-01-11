@@ -1,0 +1,520 @@
+
+⏰ 2025-05-23 21:49:32
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:49:53
+✅ Frage: wie hoch war das umsatz für meta im jahr 2022 ?
+Antwort: Der Umsatz von Meta im Jahr 2022 betrug 116,61 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:50:06
+✅ Frage: und im jahr 2024 ?
+Antwort: 2024 war geprägt durch die im Jahresverlauf fortgesetzten Kriege, dem Russisch-Ukrainischen Krieg und dem Krieg in Israel und Gaza.In Deutschland zerbrach nach einer gescheiterten Vertrauensfrage die Regierung von Bundeskanzler Scholz.Mit erstmals mehr als 1,5 Grad Celsius über dem vorindustriellen Mittel war das Jahr 2024 das heißeste seit Beginn der Aufzeichnungen.
+Quelle: https://de.wikipedia.org/wiki/2024
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:50:37
+✅ Frage: wie viel cash hat amazon im jahr 2024 ?
+Antwort: Leider habe ich keinen Zugriff auf den genauen Cash-Bestand von Amazon für das Jahr 2024. Diese Art von Finanzdaten wird in der Regel vertraulich behandelt.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:53:51
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:54:13
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2023 ?
+Antwort: Der Umsatz von Apple im Jahr 2023 betrug 383,93 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:54:36
+✅ Frage: und im jahr 2024 ?
+Antwort: 2024 war geprägt durch die im Jahresverlauf fortgesetzten Kriege, dem Russisch-Ukrainischen Krieg und dem Krieg in Israel und Gaza.In Deutschland zerbrach nach einer gescheiterten Vertrauensfrage die Regierung von Bundeskanzler Scholz.Mit erstmals mehr als 1,5 Grad Celsius über dem vorindustriellen Mittel war das Jahr 2024 das heißeste seit Beginn der Aufzeichnungen.
+Quelle: https://de.wikipedia.org/wiki/2024
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:56:19
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:56:31
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2023 ?
+Antwort: Apples Umsatz im Jahr 2023 betrug 383,93 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:56:37
+✅ Frage: und im jahr 2024 ?
+Antwort: 2024 war geprägt durch die im Jahresverlauf fortgesetzten Kriege, dem Russisch-Ukrainischen Krieg und dem Krieg in Israel und Gaza.In Deutschland zerbrach nach einer gescheiterten Vertrauensfrage die Regierung von Bundeskanzler Scholz.Mit erstmals mehr als 1,5 Grad Celsius über dem vorindustriellen Mittel war das Jahr 2024 das heißeste seit Beginn der Aufzeichnungen.
+Quelle: https://de.wikipedia.org/wiki/2024
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:57:34
+Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:57:41
+Frage: wie hoch war das umsatz bei apple im jahr 2023 ?
+Antwort: Der Umsatz von Apple im Jahr 2023 betrug 383,93 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 21:57:48
+Frage: und im jahr 2024 ?
+Antwort: Ich kann Ihnen den Umsatz von Apple für das Jahr 2024 noch nicht nennen, da dieses Jahr noch nicht abgeschlossen ist. Sobald die Finanzdaten für 2024 verfügbar sind, können Sie diese im Geschäftsbericht von Apple oder in Finanznachrichten finden.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:23:40
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:24:16
+✅ Frage: wie hoch ist der umsatz bei apple im jahr 2024 ?
+Antwort: Im Jahr 2024 erzielte das Unternehmen einen Umsatz von €380.31 Milliarden Euro eine Steigerung gegenüber dem Umsatz im Jahr 2023, der €348.90 Milliarden Euro betrug. Der Umsatz ist der Gesamtbetrag an Einnahmen, den ein Unternehmen durch den Verkauf von Waren oder Dienstleistungen generiert.
+Quelle: https://companiesmarketcap.com/de/apple/umsatz/
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:24:35
+✅ Frage: und im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:24:46
+✅ Frage: danke !
+Antwort: Gern geschehen! Wenn du weitere Fragen hast, stehe ich dir gerne zur Verfügung.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:37:28
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:37:46
+✅ Frage: Wie hoch waren die gesamten Apple-Einnahmen im Jahr 2020?
+Antwort: Die gesamten Einnahmen von Apple im Jahr 2020 betrugen 274,5 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:38:08
+✅ Frage: und im jahr 2024 ?
+Antwort: Es tut mir leid, ich kann dir keine Informationen zu den Apple-Einnahmen im Jahr 2024 geben.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:38:42
+✅ Frage: wie hoch ist der umsatz für samsung aktuell ?
+Antwort: Umsatz für Samsung (005930.KS) Umsatz in 2024 (TTM): €203.27 Milliarden Euro Gemäß den neuesten Finanzberichten von Samsung beträgt der aktuelle Umsatz des Unternehmens (TTM ) €193.22 Milliarden Euro. eine Steigerung gegenüber dem Umsatz im Jahr 2023, der €178.00 Milliarden Euro betrug.Der Umsatz ist der Gesamtbetrag an Einnahmen, den ein Unternehmen durch den Verkauf von Waren oder
+Quelle: https://companiesmarketcap.com/de/samsung/umsatz/
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:39:33
+✅ Frage: und bei google ?
+Antwort: Der Umsatz von Google belief sich im Jahr 2022 auf 279,8 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 22:39:51
+✅ Frage: und aktuell ?
+Antwort: Synonym für zurzeit 1) aktuell ist ein Adjektiv Es bezieht sich auf ein Nomen und wird dekliniert. Das Thema ist aktuell. Das ist ein aktuelles Thema. Die Zeitung berichtet nur über aktuelle Themen. Bedeutung: das in der jetzigen Zeit/im Moment Interessante, Wichtige oder Neue aktuelle Mode: Die Mode, die jetzt modern ist. aktuelle Nachrichten: Die Nachrichten, die jetzt wichtig und neu sind
+Quelle: https://de.hinative.com/questions/2383835
+------------------------------------------------------------
+
+⏰ 2025-05-23 23:21:45
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 23:21:53
+✅ Frage: wie geht es dir ?
+Antwort: Mir geht es gut, danke der Nachfrage! Wie geht es dir?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-23 23:22:15
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-23 23:22:50
+✅ Frage: wie ist der umsatz bei samsung aktuell ?
+Antwort: Samsung hat vorläufige Kennzahlen für das vierte Quartal 2024 vorgelegt. Der koreanische Elektronikkonzern erwartet einen Umsatz von 75 Billionen Won (49,7 Milliarden Euro). Das würde einem
+Quelle: https://www.zdnet.de/88419803/samsung-meldet-umsatz-und-gewinnanstieg-im-vierten-quartal/
+------------------------------------------------------------
+
+⏰ 2025-05-23 23:23:50
+✅ Frage: erstell mir eine diagramm für gewinn des apples für die letzten 5 jahren
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+401 Client Error: Unauthorized for url: https://huggingface.co/api/models/meta-llama/Llama-3.1-70B-Instruct?expand=inferenceProviderMapping (Request ID: Root=1-6830e75f-2987ceff7b885390731823ca;49e1f62a-fcb9-4a5a-94dc-71507978bd94)
+
+Invalid credentials in Authorization header
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:24:20
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:24:39
+✅ Frage: wie war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:25:14
+✅ Frage: wie viel ist der aktuelle umsatz für samsung ?
+Antwort: Samsung hat im Jahr 2023 einen Umsatz von 258,94 Billionen Won (ungefähr 193 Milliarden US-Dollar) erzielt.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:25:59
+✅ Frage: wie hoch war das gewinn für asus  im 2024?
+Antwort: Es tut mir leid, ich kann keine Informationen über den Gewinn von Asus für 2024 finden.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:30:03
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:30:20
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:30:45
+✅ Frage: und für samsung im jahr  2024?
+Antwort: 2024 war ein durchaus entscheidendes Jahr für Samsung, in dem das Unternehmen einmal mehr gezeigt hat, wie Technologie unser Leben verbessern kann. Mit einer breiten Palette an neuen Produkten, darunter die Samsung Galaxy S24 Serie, das Galaxy Z Fold6 und Z Flip6, die Galaxy Watch Ultra und die bahnbrechende Galaxy AI-Technologie, setzt Samsung neue Standards. Der Blick geht dabei jedoch
+Quelle: https://www.mobilezone.ch/de/magazin/highlights-samsung-2024-galaxy-s24-innovationen
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:31:17
+✅ Frage: wie hoch war das umsatz bei samsung im jahr 2024 ?
+Antwort: Ich habe leider keine Informationen über den Samsung-Umsatz für 2024.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:31:43
+✅ Frage: wie hoch ist das umsatz bei samsung im jahr 2024 ?
+Antwort: Ich kann dir keine genauen Umsatzzahlen für das gesamte Jahr 2024 von Samsung nennen. Das liegt daran, dass:
+
+*   **Das Jahr 2024 noch nicht vorbei ist:** Die endgültigen Umsatzzahlen für ein Geschäftsjahr werden in der Regel erst nach Abschluss des Jahres und der Erstellung des Jahresberichts veröffentlicht.
+*   **Umsatzzahlen vertraulich sind:** Unternehmen wie Samsung veröffentlichen in der Regel Quartals- und Jahresberichte, aber detaillierte interne Umsatzzahlen sind oft nicht öffentlich zugänglich.
+
+**Wo du Informationen finden könntest:**
+
+*   **Samsung Investor Relations:** Die Investor-Relations-Seite von Samsung ist der beste Ort, um nach offiziellen Finanzberichten zu suchen, sobald sie veröffentlicht werden.
+*   **Finanznachrichten und -analysen:** Verfolge Nachrichtenagenturen und Finanzanalysten, die Samsung abdecken. Sie werden die Umsatzzahlen analysieren und kommentieren, sobald sie verfügbar sind.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:32:15
+✅ Frage: wie viel ist das gewimm für asus im im jahr 2024 ?
+Antwort: Die Gewinnzahlen von ASUS für das Gesamtjahr 2024 sind noch nicht veröffentlicht, da das Jahr noch nicht abgeschlossen ist. Sobald der Jahresbericht veröffentlicht ist, finden Sie die Informationen auf der Investor-Relations-Seite von ASUS oder in Finanznachrichten und -analysen.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:34:46
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:35:05
+✅ Frage: wie war das umsatz bei apple im jahr 2021 ?
+Antwort: Apples Umsatz im Jahr 2021 betrug 365,82 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:35:26
+✅ Frage: wie viel ist das gewinn für samsung im jahr 2024 ?
+Antwort: Leider kann ich dir momentan keine genauen Angaben zum Gewinn von Samsung im Jahr 2024 liefern.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:38:53
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:39:11
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:39:50
+✅ Frage: wie viel ist das gewinn für samsung im laufende jahr?
+Antwort: Aktuelle und historische Gewinndiagramme für Samsung. Stand Januar 2025 beträgt der TTM-Gewinn von Samsung €219.93 Milliarden Euro
+Quelle: https://companiesmarketcap.com/de/samsung/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:40:42
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+(Request ID: Root=1-683177f3-743fc8f0172b02a87c3569a9;54c14669-3c30-4042-91ae-f0e47c13d2a5)
+
+403 Forbidden: This authentication method does not have sufficient permissions to call Inference Providers on behalf of user adooolss.
+Cannot access content at: https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions.
+Make sure your token has the correct permissions.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:49:52
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:50:11
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:51:11
+✅ Frage: wie viel ist das gewinn für samsung im laufende jahr?
+Antwort: Aktuelle und historische Gewinndiagramme für Samsung. Stand Januar 2025 beträgt der TTM-Gewinn von Samsung €219.93 Milliarden Euro
+Quelle: https://companiesmarketcap.com/de/samsung/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:51:38
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+(Request ID: Root=1-68317a83-331fc7cd64a9f21a693672da;19f76277-1d82-4d45-8baf-182e127d7801)
+
+403 Forbidden: This authentication method does not have sufficient permissions to call Inference Providers on behalf of user adooolss.
+Cannot access content at: https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions.
+Make sure your token has the correct permissions.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:58:23
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:58:32
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:58:40
+✅ Frage: wie viel ist das gewinn für samsung im laufende jahr?
+Antwort: Aktuelle und historische Gewinndiagramme für Samsung. Stand Januar 2025 beträgt der TTM-Gewinn von Samsung €219.93 Milliarden Euro
+Quelle: https://companiesmarketcap.com/de/samsung/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 09:59:03
+❗ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: gewinn_diagramm.png
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:04:05
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Das Diagramm zeigt den Gewinn von Apple in den letzten 3 Jahren.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:10:28
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:10:43
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:11:14
+✅ Frage: wie viel ist das gewinn für samsung im laufende jahr?
+Antwort: Aktuelle und historische Gewinndiagramme für Samsung. Stand Januar 2025 beträgt der TTM-Gewinn von Samsung €219.93 Milliarden Euro
+Quelle: https://companiesmarketcap.com/de/samsung/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:11:31
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Das Diagramm zeigt den Gewinn von Apple in den letzten 3 Jahren.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:14:59
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Das Diagramm zeigt die Gewinne von Apple in den letzten 3 Jahren. Die Gewinne sind wie folgt: 2020: 59,53 Milliarden USD, 2021: 94,68 Milliarden USD, 2022: 99,80 Milliarden USD.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:17:38
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+402 Client Error: Payment Required for url: https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions (Request ID: Root=1-6831809a-5b3450bd2d39b1ce47530eb8;f9901716-e755-4d5c-b65e-a18de15216a6)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:21:15
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+402 Client Error: Payment Required for url: https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions (Request ID: Root=1-68318173-4deb2f7c427678e370663bdc;d590a21c-4c79-463e-ae90-7f55315b6be6)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:22:21
+❗ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Ich konnte die finanziellen Daten von Apple nicht finden. Bitte geben Sie mir die Daten, um ein Diagramm zu erstellen.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:24:59
+❗ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: apple_gewinn.png
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:28:42
+❗ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Die Diagramme für den Umsatz und den Gewinn von Apple sind erstellt.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:29:52
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:30:04
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:30:24
+✅ Frage: wie viel ist das gewinn für asus im laufende jahr?
+Antwort: Gewinn für ASUS (2357.TW) Gewinn in 2024 (TTM): €1.23 Milliarde Euro Gemäß den neuesten Finanzberichten von ASUS beträgt der aktuelle Gewinn des Unternehmens €18.24 Milliarden Euro. , eine Steigerung gegenüber dem Gewinn im Jahr 2023, der €0.63 Milliarde Euro betrug.Der auf dieser Seite angezeigter Gewinn ist das Vorsteuerergebnis des Unternehmens.
+Quelle: https://companiesmarketcap.com/de/asus/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:30:54
+❗ Frage: erstell mir ein Diagramm für das gewinn bei google in der letzten 3 Jahre
+Antwort: Es tut mir leid, aber ich habe keine Möglichkeit, die Finanzdaten von Google abzurufen. Bitte kontaktieren Sie mich, wenn Sie weitere Informationen benötigen.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:35:34
+✅ Frage: hallo
+Antwort: Hello! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:35:42
+✅ Frage: wie hoch war das umsatz bei apple im jahr 2022 ?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:36:05
+✅ Frage: wie viel ist das gewinn für asus im laufende jahr?
+Antwort: Gewinn für ASUS (2357.TW) Gewinn in 2024 (TTM): €1.23 Milliarde Euro Gemäß den neuesten Finanzberichten von ASUS beträgt der aktuelle Gewinn des Unternehmens €18.24 Milliarden Euro. , eine Steigerung gegenüber dem Gewinn im Jahr 2023, der €0.63 Milliarde Euro betrug.Der auf dieser Seite angezeigter Gewinn ist das Vorsteuerergebnis des Unternehmens.
+Quelle: https://companiesmarketcap.com/de/asus/gewinn/
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:36:18
+✅ Frage: erstell mir ein Diagramm für das gewinn bei google in der letzten 3 Jahre
+Antwort: Was sind die finanziellen Daten von Google in den letzten 3 Jahren?
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:36:33
+✅ Frage: erstell mir ein Diagramm für das gewinn bei apple in der letzten 3 Jahre
+Antwort: Fehler beim Data-Analysis-Agent: Error in generating model output:
+402 Client Error: Payment Required for url: https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions (Request ID: Root=1-6831850a-3a0363c02fdcd06829c57c94;2014be64-24c8-44e3-b4b4-d9d3ef13f0c6)
+
+You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:40:13
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Apple-Gewinn in den letzten 3 Jahren
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:42:43
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 3 Jahre
+Antwort: Das Diagramm zeigt die Gewinne von Apple für die letzten 3 Jahre.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:44:56
+❗ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 4 Jahre
+Antwort: Diagramm erstellt
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 10:50:56
+✅ Frage: erstell mir ein Diagramm für das gewinn bei Apple in der letzten 4 Jahre
+Antwort: Das Diagramm für den Gewinn von Apple in den letzten 4 Jahren wurde erfolgreich erstellt.
+Quelle: Data-Analysis-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 11:10:43
+✅ Frage: Hallo
+Antwort: Hallo! How can I help you today?
+Quelle: RAG-Agent (general_chat)
+------------------------------------------------------------
+
+⏰ 2025-05-24 11:11:37
+✅ Frage: Wie hoch war das Umsatz bei Apple im Jahr 2022?
+Antwort: Der Umsatz von Apple im Jahr 2022 betrug 394,33 Milliarden US-Dollar.
+Quelle: RAG-Agent
+------------------------------------------------------------
+
+⏰ 2025-05-24 11:12:31
+✅ Frage: Wie viel ist das gewinn für Samsung in laufende Jahr?
+Antwort: Der operative Gewinn stieg im Vergleich zum Vorjahreszeitraum um mehr als das 15-fache auf 10,4 Billionen Won (rund 7,52 Milliarden Dollar), wie das Unternehmen am Mittwoch mitteilte.
+Quelle: https://www.handelsblatt.com/technik/it-internet/quartalszahlen-samsung-verzeichnet-rekordgewinn-dank-ki-boom/100056466.html
+------------------------------------------------------------
+
+⏰ 2025-05-24 11:13:27
+✅ Frage: Erstell mir ein Diagram für das gewinn bei Apple in der letzten 3 Jahre.
+Antwort: Apples Gewinn in den Jahren 2021, 2022 und 2023:
+
+*   **2021:** 94,68 Milliarden Dollar
+*   **2022:** 99,8 Milliarden Dollar
+*   **2023:** 96,99 Milliarden Dollar
+Quelle: RAG-Agent
+------------------------------------------------------------
