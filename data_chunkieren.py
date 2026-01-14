@@ -1,3 +1,4 @@
+python
 import os
 import json
 import shutil
@@ -7,10 +8,10 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
-# .env-Datei laden
+# Load .env file
 load_dotenv()
 
-# Dateipfade
+# File paths
 DATA_PATH = "structured_data.json"
 CHROMA_DIR = "chroma_langchain_db"
 
@@ -26,11 +27,11 @@ def chunk_documents(documents, chunk_size=1000, chunk_overlap=200):
 def embed_and_store(chunks):
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 
-    # Alte Datenbank löschen, falls vorhanden
+    # Delete old database if exists
     if os.path.exists(CHROMA_DIR):
         shutil.rmtree(CHROMA_DIR)
 
-    # Neue Datenbank erstellen
+    # Create new database
     db = Chroma.from_documents(
         documents=chunks,
         embedding=embeddings,
@@ -39,17 +40,18 @@ def embed_and_store(chunks):
     return db
 
 def main():
-    print("🔄 Daten werden geladen...")
+    print("🔄 Loading data...")
     documents = load_structured_data(DATA_PATH)
-    print(f"📄 {len(documents)} Dokumente gefunden.")
+    print(f"📄 {len(documents)} documents found.")
 
-    print("✂️ Chunking wird gestartet...")
+    print("✂️ Starting chunking...")
     chunks = chunk_documents(documents)
-    print(f"✅ {len(chunks)} Chunks wurden erstellt.")
+    print(f"✅ {len(chunks)} chunks created.")
 
-    print("📦 Embedding und Speicherung in Chroma...")
+    print("📦 Embedding and storing in Chroma...")
     embed_and_store(chunks)
-    print(f"✅ Alle Daten wurden in '{CHROMA_DIR}' gespeichert.")
+    print(f"✅ All data has been stored in '{CHROMA_DIR}'.")
 
 if __name__ == "__main__":
     main()
+
