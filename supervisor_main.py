@@ -9,21 +9,21 @@ from dotenv import load_dotenv
 import re
 import time
 
-# === Laden der Umgebungsvariablen (z. B. API-Keys) ===
+ === Loading environment variables (e.g., API keys) ===
 load_dotenv()
 
-# === Initialisierung des Sprachmodells (Google Gemini Flash) ===
+ === Initialization of the language model (Google Gemini Flash) ===
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7)
 
-# === Vorbereitung des RAG-Agents (Document-based QA) ===
-vectorstore = load_existing_vectorstore()  # Laden der bestehenden Vektordatenbank (z. B. Finanzberichte)
-tools = setup_tools(vectorstore)  # Einrichten der Tools für den RAG-Agent
-rag_agent = create_agent(tools)  # Erstellen des ReAct-Agenten mit den Tools
+ === Preparing the RAG agent (Document-based QA) ===
+vectorstore = load_existing_vectorstore()   Loading the existing vector database (e.g., financial reports)
+tools = setup_tools(vectorstore)   Setting up the tools for the RAG agent
+rag_agent = create_agent(tools)   Creating the ReAct agent with the tools
 rag_agent.name = "rag_agent"
-research_agent.name = "research_agent"  # Web-Such-Agent benennen
-data_analysis_agent.name = "data_analysis_agent"  # Datenanalyse-Agent benennen
+research_agent.name = "research_agent"   Naming the web search agent
+data_analysis_agent.name = "data_analysis_agent"   Naming the data analysis agent
 
-# === Supervisor erstellt und mit Regeln versehen ===
+ === Creating and configuring the supervisor ===
 supervisor = create_supervisor(
     model=llm,
     agents=[rag_agent, research_agent, data_analysis_agent],
@@ -40,62 +40,62 @@ supervisor = create_supervisor(
     output_mode="full_history",
 ).compile()
 
-# === Smalltalk-Erkennung (freundliche Begrüßungen etc.) ===
+ === Smalltalk detection (friendly greetings, etc.) ===
 smalltalk_keywords = [
-    "hallo", "hi", "wie geht", "guten morgen", "guten abend", "servus",
-    "grüß dich", "moin", "hey", "was geht", "wie läufts", "alles klar",
-    "was machst du", "wer bist du", "was kannst du"
+    "hello", "hi", "how are", "good morning", "good evening", "servus",
+    "greetings", "moin", "hey", "what's up", "how's it going", "all right",
+    "what are you doing", "who are you", "what can you do"
 ]
 
 def is_smalltalk(question: str) -> bool:
     return any(kw in question.lower() for kw in smalltalk_keywords)
 
-# === Antwortvalidierung: unzureichend, leer, keine Zahlen etc. ===
+ === Answer validation: insufficient, empty, no numbers, etc. ===
 def is_insufficient(answer: str, user_input: str = "") -> bool:
     if not answer or not isinstance(answer, str):
         return True
     if any(phrase in answer.lower() for phrase in [
-        "keine daten", "nicht verfügbar", "unbekannt", "weiß ich nicht"
+        "no data", "not available", "unknown", "i don't know"
     ]):
         return True
-    if any(kw in user_input.lower() for kw in ["wie viel", "umsatz", "gewinn", "aktuell", "zahlen", "betrag", "revenue"]):
+    if any(kw in user_input.lower() for kw in ["how much", "revenue", "profit", "current", "numbers", "amount", "revenue"]):
         if not re.search(r"\d{4}|\d+[\.,]?\d*", answer):
             return True
     return len(answer.strip()) < 10
 
-# === Jahresprüfung: Hinweis hinzufügen, wenn Jahr < aktuelles Jahr ===
+ === Year checking: add a note if year < current year ===
 def adjust_temporal_phrasing(user_input: str) -> str:
     from datetime import datetime
-    aktuelles_jahr = datetime.now().year
+    current_year = datetime.now().year
     import re
-    match = re.search(r"(?:umsatz|gewinn|cash)[^0-9]*(\d{4})", user_input.lower())
+    match = re.search(r"(?:revenue|profit|cash)[^0-9]*(\d{4})", user_input.lower())
     if match:
-        jahr = int(match.group(1))
-        if jahr < aktuelles_jahr:
-            return f"{user_input} (Hinweis: Wir sind im Jahr {aktuelles_jahr}, die Zahlen für {jahr} sollten veröffentlicht sein.)"
+        year = int(match.group(1))
+        if year < current_year:
+            return f"{user_input} (Note: We are in the year {current_year}, the figures for {year} should be published.)"
     return user_input
 
-# === Logging: Frage, Antwort, Quelle, Zeitstempel speichern ===
+ === Logging: save question, answer, source, timestamp ===
 def log_to_file(user_input, answer, source):
     from datetime import datetime
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     insuff_flag = "❗" if is_insufficient(answer, user_input) else "✅"
     with open("chat_log.txt", "a", encoding="utf-8") as f:
-        f.write(f"\n⏰ {timestamp}\n{insuff_flag} Frage: {user_input}\nAntwort: {answer}\nQuelle: {source}\n")
+        f.write(f"\n⏰ {timestamp}\n{insuff_flag} Question: {user_input}\nAnswer: {answer}\nSource: {source}\n")
         f.write("-" * 60 + "\n")
 
-# === Funktion zum Überprüfen, ob ein aktuelles Jahr in der Frage enthalten ist ===
+ === Function to check if the question contains a recent year ===
 def contains_recent_year(user_input: str, min_year: int = 2024) -> bool:
     years = re.findall(r"\b(20\d{2})\b", user_input)
     return any(int(y) >= min_year for y in years)
 
-# === Nur bei direktem Ausführen der Datei (nicht beim Import) ===
+ === Only when the file is run directly (not on import) ===
 if __name__ == "__main__":
-    print("\nSupervisor ist bereit. Gib eine Frage ein (oder 'exit' zum Beenden):")
-    history = []  # Verlauf für RAG-Context
+    print("\nSupervisor is ready. Enter a question (or 'exit' to quit):")
+    history = []   History for RAG context
 
     while True:
-        user_input = input("\nFrage: ").strip()
+        user_input = input("\nQuestion: ").strip()
         if user_input.lower() in ["exit", "quit"]:
             break
 
@@ -104,7 +104,7 @@ if __name__ == "__main__":
             answer_text = general_chat_tool.run(user_input)
             source = "RAG-Agent (general_chat)"
         elif contains_recent_year(user_input, 2024):
-            print("\n[Hinweis] Frage enthält Jahr 2024 oder neuer → Web-Agent wird verwendet...")
+            print("\n[Note] Question contains year 2024 or later → Using Web Agent...")
             answer_text, source = ask_question_and_save_answer(user_input)
         else:
             try:
@@ -112,40 +112,41 @@ if __name__ == "__main__":
                 answer_text = rag_result.get("output") if isinstance(rag_result, dict) else str(rag_result)
                 source = "RAG-Agent"
 
-                # NEU: Wenn Antwort leer, None oder zu kurz → Web-Agent nutzen
+                 NEW: If answer is empty, None, or too short → Use Web Agent
                 if not answer_text or not isinstance(answer_text, str) or len(answer_text.strip()) < 5:
-                    print("\n[Hinweis] RAG-Agent hat keine Antwort geliefert → Web-Agent wird verwendet...")
+                    print("\n[Note] RAG-Agent provided no answer → Using Web Agent...")
                     answer_text, source = ask_question_and_save_answer(user_input)
                 elif is_insufficient(answer_text, user_input):
-                    print("\n[Hinweis] RAG-Antwort unvollständig → Web-Agent wird verwendet...")
+                    print("\n[Note] RAG answer incomplete → Using Web Agent...")
                     answer_text, source = ask_question_and_save_answer(user_input)
 
             except Exception as e:
-                print("\n[Fehler] RAG-Agent fehlgeschlagen → Web-Agent wird verwendet...")
+                print("\n[Error] RAG-Agent failed → Using Web Agent...")
                 answer_text, source = ask_question_and_save_answer(user_input)
 
-        print("\nAntwort:")
+        print("\nAnswer:")
         print(answer_text)
-        print(f"Quelle: {source}")
+        print(f"Source: {source}")
 
-        # Prüfung, ob relevante Zahlen in der Antwort vorkommen
-        zahlen_keywords = ["wie viel", "umsatz", "gewinn", "aktuell", "zahlen", "betrag", "revenue"]
-        if any(kw in user_input.lower() for kw in zahlen_keywords):
+         Check if relevant numbers are present in the answer
+        number_keywords = ["how much", "revenue", "profit", "current", "numbers", "amount", "revenue"]
+        if any(kw in user_input.lower() for kw in number_keywords):
             if not re.search(r"\d{4}|\d+[\.,]?\d*", answer_text):
-                print("\n⚠️ Es konnten keine aktuellen Umsatzzahlen gefunden werden. Bitte prüfe die offiziellen Finanzberichte oder die Investor Relations Seite des Unternehmens.")
+                print("\n⚠️ No current revenue figures could be found. Please check the official financial reports or the investor relations page of the company.")
 
-        # QA/Ethik-Check der Antwort
+         QA/Ethics check of the answer
         warnings = qa_ethics_agent.run(answer_text, [source])
-        print("\n⚖️ QA/Ethik-Prüfung:")
+        print("\n⚖️ QA/Ethics Check:")
         print(warnings)
 
-        # Verlauf aktualisieren für den nächsten Durchlauf
+         Update history for the next iteration
         history.append({"role": "user", "content": user_input})
         history.append({"role": "assistant", "content": answer_text})
 
-# === Export für Gradio oder externe Nutzung ===
+ === Export for Gradio or external use ===
 __all__ = [
     "rag_agent", "tools", "ask_question_and_save_answer",
     "qa_ethics_agent", "is_smalltalk", "is_insufficient",
     "adjust_temporal_phrasing", "log_to_file"
 ]
+
