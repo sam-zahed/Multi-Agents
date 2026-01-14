@@ -1,3 +1,4 @@
+python
 from langchain_tavily import TavilySearch
 from langchain.chat_models import init_chat_model
 from langgraph.prebuilt import create_react_agent
@@ -6,37 +7,37 @@ from dotenv import load_dotenv
 from datetime import datetime
 from langchain.agents import tool
 
-# .env-Datei laden
+# Load .env file
 load_dotenv()
 
-# Web-Suchtool als @tool definieren
+# Define web search tool as @tool
 @tool
 def web_search_tool(query: str):
-    """Führt eine Websuche durch und gibt Inhalt und Quelle (URL, falls vorhanden) zurück."""
+    """Performs a web search and returns content and source (URL, if available)."""
     search = TavilySearch(max_results=3)
     web_search_results = search.invoke(query)
     if "results" in web_search_results and len(web_search_results["results"]) > 0:
         result = web_search_results["results"][0]
         content = result.get("content", "")
-        source = result.get("source") or result.get("url") or "Quelle unbekannt"
+        source = result.get("source") or result.get("url") or "Source unknown"
         return content, source
     else:
-        return "Keine Ergebnisse gefunden.", "Quelle unbekannt"
+        return "No results found.", "Source unknown"
 
-# Modell initialisieren
+# Initialize model
 llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
 
-# Funktion zum Speichern von Antwort und Quelle
+# Function to save answer and source
 def store_answer_and_source(question, answer, source):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open("answers_and_sources.txt", "a") as file:
+    with open("answers_and_sources.txt", "a", encoding="utf-8") as file:
         file.write(f"Timestamp: {timestamp}\n")
         file.write(f"Question: {question}\n")
         file.write(f"Answer: {answer}\n")
         file.write(f"Source: {source}\n")
         file.write("\n" + "-"*50 + "\n")
 
-# Agent erstellen
+# Create agent
 research_agent = create_react_agent(
     model=llm,
     tools=[web_search_tool],
@@ -51,23 +52,23 @@ research_agent = create_react_agent(
 )
 research_agent.name = "research_agent"
 
-# Beispiel: Abfrage stellen und Antwort mit Quelle speichern
+# Example: Ask question and save answer with source
 def ask_question_and_save_answer(question):
-    # Web-Suche ausführen
+    # Execute web search
     answer, source = web_search_tool.invoke(question)
     
-    # Die Antwort speichern
+    # Save the answer
     store_answer_and_source(question, answer, source)
 
-    # Die Antwort zurückgeben
+    # Return the answer
     return answer, source
 
-# Benutzerinteraktion: Mehrere Fragen zulassen
+# User interaction: Allow multiple questions
 # while True:
-#     question = input("Bitte geben Sie Ihre frage ein (oder 'exit' zum Beenden): ")
+#     question = input("Please enter your question (or 'exit' to quit): ")
 #     if question.strip().lower() == 'exit':
-#         print("Beendet.")
+#         print("Terminated.")
 #         break
 #     answer, source = ask_question_and_save_answer(question)
-#     print("Antwort:", answer)
-#     print("Quelle:", source)
+#     print("Answer:", answer)
+#     print("Source:", source)
