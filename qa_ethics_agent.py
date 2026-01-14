@@ -1,39 +1,40 @@
-# === Dummy-Basisklasse zur Kompatibilität mit Agent-Konzept (falls kein echter LangChain-Agent verwendet wird) ===
+python
+# === Dummy base class for compatibility with Agent concept (if no real LangChain agent is used) ===
 class Agent:
     def __init__(self, name=None, instructions=None):
-        self.name = name  # Anzeigename des Agenten
-        self.instructions = instructions  # Interne Beschreibung bzw. Verhaltenserwartung
+        self.name = name  # Display name of the agent
+        self.instructions = instructions  # Internal description/behavioral expectation
 
-# === Funktion zur Überprüfung von Antworten auf Qualität, Ethik und Bias ===
+# === Function to check answers for quality, ethics, and bias ===
 def check_facts_and_ethics(answer, sources):
-    # Hier könnten GPT-Modelle, OpenAI Moderation API oder eigene Heuristiken genutzt werden
+    # GPT models, OpenAI Moderation API, or custom heuristics could be used here
     warnings = []
     if not answer or not isinstance(answer, str) or len(answer) == 0:
-        warnings.append("⚠️ Keine Antwort erhalten.")
+        warnings.append("⚠️ No answer received.")
         return warnings
     if not sources or len(sources) == 0:
-        warnings.append("⚠️ Keine Quellenangabe gefunden.")
-    if "kann ich nicht" in answer.lower() or "unbekannt" in answer.lower():
-        warnings.append("⚠️ Antwort ist unvollständig oder unsicher.")
-    # Sehr einfache Bias-Erkennung: übergeneralisierende Begriffe
-    if "immer" in answer.lower() or "nie" in answer.lower():
-        warnings.append("⚠️ Möglicher Bias in der Formulierung erkannt.")
-    # Erweiterbar: weitere Checks wie Faktenprüfung, Sentiment etc.
+        warnings.append("⚠️ No sources found.")
+    if "cannot" in answer.lower() or "unknown" in answer.lower():
+        warnings.append("⚠️ Answer is incomplete or uncertain.")
+    # Very simple bias detection: overgeneralizing terms
+    if "always" in answer.lower() or "never" in answer.lower():
+        warnings.append("⚠️ Potential bias detected in formulation.")
+    # Extensible: additional checks like fact verification, sentiment, etc.
     return warnings
 
-# === Agent zur Durchführung der Ethik- und QA-Prüfung von Antworten ===
+# === Agent for conducting ethics and QA checks on answers ===
 class QA_EthicsAgent(Agent):
     def __init__(self):
         super().__init__(
-            name="QA & Ethics Reviewer",  # Anzeigename
-            instructions="Prüft Antworten auf Fakten, Quellen, Bias und Ethik."  # Beschreibung für die Aufgabe des Agenten
+            name="QA & Ethics Reviewer",  # Display name
+            instructions="Checks answers for facts, sources, bias, and ethics."  # Description of the agent's task
         )
 
     def run(self, answer, sources):
         warnings = check_facts_and_ethics(answer, sources)
         if warnings:
-            return "\n".join(warnings)  # Warnungen gesammelt als String zurückgeben
-        return "✅ Antwort besteht die QA/Ethik-Prüfung."  # Bestätigung bei sauberer Antwort
+            return "\n".join(warnings)  # Return collected warnings as string
+        return "✅ Answer passes the QA/ethics check."  # Confirmation for clean answer
 
-# === Instanzierung des QA/Ethik-Agenten für externe Nutzung ===
+# === Instantiation of the QA/Ethics Agent for external use ===
 qa_ethics_agent = QA_EthicsAgent()
