@@ -1,3 +1,4 @@
+python
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -6,26 +7,26 @@ from langchain.agents import Tool, AgentExecutor, create_react_agent
 from langchain_core.prompts import ChatPromptTemplate
 from typing import Optional
 
-# === 1. Bestehende Vektor-Datenbank laden (z. B. Chroma mit HuggingFace-Embeddings) ===
+# === 1. Load existing vector database (e.g., Chroma with HuggingFace Embeddings) ===
 def load_existing_vectorstore():
-    # Verwende HuggingFace-Embedding-Modell zur semantischen Repräsentation von Text
+    # Use HuggingFace embedding model for semantic text representation
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
-    # Lade die bestehende Chroma-Datenbank mit den Embeddings
+    # Load existing Chroma database with embeddings
     return Chroma(
         collection_name="example_collection",
         embedding_function=embeddings,
         persist_directory="./chroma_langchain_db"
     )
 
-# === 2. Tools vorbereiten: Dokumentensuche und allgemeiner Chat ===
+# === 2. Prepare tools: document search and general chat ===
 def setup_tools(vectorstore: Optional[Chroma] = None):
-    # Initialisiere das LLM (Google Gemini) für Tool-Logik
+    # Initialize LLM (Google Gemini) for tool logic
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7)
 
-    tools = []  # Liste aller verfügbaren Tools für den Agent
+    tools = []  # List of all available tools for the agent
 
     if vectorstore:
-        # Baue eine Retrieval-QA-Kette zur Nutzung der Vektor-Datenbank
+        # Build a RetrievalQA chain to use the vector database
         qa_chain = RetrievalQA.from_chain_type(
             llm=llm,
             chain_type="stuff",
@@ -33,85 +34,84 @@ def setup_tools(vectorstore: Optional[Chroma] = None):
             verbose=True
         )
 
-        # Wrapper-Funktion zur Ausgabe von QA-Ergebnissen mit Debug-Ausgabe
+        # Wrapper function to output QA results with debug output
         def debug_qa_chain(query):
             result = qa_chain.run(query)
             print("[DEBUG] RetrievalQA result:", result)
             return result
 
-        # Füge Tool für die Dokumentensuche hinzu
+        # Add tool for document search
         tools.append(
             Tool(
                 name="document_search",
                 func=debug_qa_chain,
                 description=(
-                    "Suche nach konkreten Fakten, Zahlen oder Tabellen aus Finanzberichten. "
-                    "Bevorzugt bei Umsatz-, Gewinn-, oder anderen dokumentenbasierten Fragen."
+                    "Search for specific facts, numbers, or tables from financial reports. "
+                    "Preferred for revenue, profit, or other document-based questions."
                 )
             )
         )
 
-    # Tool für allgemeine Fragen, die nicht dokumentenbasiert sind
+    # Tool for general questions not related to documents
     tools.append(
         Tool(
             name="general_chat",
-            func=lambda q: llm.invoke(f"Antworte natürlich auf: {q}").content,
-            description="Für Smalltalk oder Fragen ohne Dokumentenbezug."
+            func=lambda q: llm.invoke(f"Answer naturally to: {q}").content,
+            description="For small talk or questions without document reference."
         )
     )
 
     return tools
 
-# === 3. ReAct-Agent definieren, der Tools intelligent nutzt und per Prompt gesteuert wird ===
+# === 3. Define ReAct agent that intelligently uses tools and is controlled by prompt ===
 def create_agent(tools: list):
-    # Prompt mit Anweisungen, wann welches Tool verwendet werden soll
+    # Prompt with instructions on when to use which tool
     prompt = ChatPromptTemplate.from_template("""
-Du bist ein ReAct-Agent für Unternehmensdaten. Befolge folgende Regeln strikt:
+You are a ReAct agent for corporate data. Strictly follow these rules:
 
-1. Nutze IMMER zuerst das Tool **document_search**, wenn die Frage sich auf:
-   - Umsatz, Gewinn, Einnahmen
-   - Jahre (z. B. 2021, 2022, 2023)
-   - Inhalte aus Berichten, Tabellen oder Dokumenten
-   bezieht.
+1. ALWAYS use the **document_search** tool first if the question relates to:
+   - Revenue, profit, earnings
+   - Years (e.g., 2021, 2022, 2023)
+   - Content from reports, tables, or documents.
 
-2. Wenn das Jahr in der Frage **< aktuelles Jahr liegt**, gehe davon aus, dass die Daten veröffentlicht sind.
-   Lass dich nicht mit 'nicht verfügbar' zufrieden geben.
+2. If the year in the question **is < current year**, assume the data has been published.
+   Do not settle for 'not available'.
 
-3. Falls document_search keine gute Antwort bringt oder keine Zahl enthält,
-   leite zur Websuche weiter (Tool: research_agent), sofern vorhanden.
+3. If document_search does not yield a good answer or contains no numbers,
+   forward to web search (tool: research_agent), if available.
 
-4. Nutze general_chat **nur** für Smalltalk oder allgemeine Fragen.
+4. Use general_chat **only** for small talk or general questions.
 
 Format:
-Verfügbare Tools: {tools}
-Tool-Namen: {tool_names}
-Verlauf: {history}
-Frage: {input}
+Available tools: {tools}
+Tool names: {tool_names}
+History: {history}
+Question: {input}
 
-Nutze folgenden Ablauf:
+Use the following flow:
 Thought: ...
-Action: <Tool-Name oder Final Answer>
+Action: <Tool name or Final Answer>
 Action Input: <Text>
-Observation: <Tool-Ergebnis>
+Observation: <Tool result>
 ...
-Thought: Ich habe genug Information.
-Final Answer: <Antwort>
+Thought: I have enough information.
+Final Answer: <Answer>
 
 {agent_scratchpad}
 """)
 
-    # Nochmals das LLM initialisieren für den Agenten selbst
+    # Initialize LLM again for the agent itself
     llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7)
 
-    # Erstelle den ReAct-Agent basierend auf Prompt und Tools
+    # Create the ReAct agent based on prompt and tools
     agent = create_react_agent(llm=llm, tools=tools, prompt=prompt)
 
-    # Verpacke den Agenten in einen AgentExecutor für Laufzeitsteuerung
+    # Wrap the agent in an AgentExecutor for runtime control
     executor = AgentExecutor(
         agent=agent,
         tools=tools,
-        verbose=True,  # Ausgabe der Zwischenschritte
-        handle_parsing_errors=True  # Toleranz bei Parsing-Problemen
+        verbose=True,  # Output intermediate steps
+        handle_parsing_errors=True  # Tolerance for parsing problems
     )
     executor.name = "rag_agent"
     return executor
