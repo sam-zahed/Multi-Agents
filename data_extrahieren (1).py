@@ -1,3 +1,4 @@
+python
 # data_loader.py
 import os
 import pdfplumber
@@ -9,7 +10,7 @@ def extract_tables_from_directory_to_json(directory, output_path):
     for company in os.listdir(directory):
         company_path = os.path.join(directory, company)
 
-        # Wenn es sich direkt um eine PDF-Datei handelt
+        # If it's a PDF file directly
         if os.path.isfile(company_path) and company_path.endswith(".pdf"):
             company = "root"
             file_path = company_path
@@ -18,7 +19,7 @@ def extract_tables_from_directory_to_json(directory, output_path):
                     for page_num, page in enumerate(pdf.pages):
                         tables = page.extract_tables()
                         if tables:
-                            print(f"📄 {file_path} - Seite {page_num+1}: {len(tables)} Tabellen gefunden")
+                            print(f"📄 {file_path} - Page {page_num+1}: {len(tables)} tables found")
                             for table_idx, table in enumerate(tables):
                                 text = "\n".join([
                                     " | ".join([cell if cell else "" for cell in row]) for row in table
@@ -42,9 +43,9 @@ def extract_tables_from_directory_to_json(directory, output_path):
                                     "content": text
                                 })
             except Exception as e:
-                print(f"❌ Fehler: {file_path} konnte nicht gelesen werden. {e}")
+                print(f"❌ Error: {file_path} could not be read. {e}")
 
-        # Wenn es sich um ein Verzeichnis handelt
+        # If it's a directory
         elif os.path.isdir(company_path):
             for filename in os.listdir(company_path):
                 if not filename.endswith(".pdf"):
@@ -56,7 +57,7 @@ def extract_tables_from_directory_to_json(directory, output_path):
                         for page_num, page in enumerate(pdf.pages):
                             tables = page.extract_tables()
                             if tables:
-                                print(f"📄 {file_path} - Seite {page_num+1}: {len(tables)} Tabellen gefunden")
+                                print(f"📄 {file_path} - Page {page_num+1}: {len(tables)} tables found")
                                 for table_idx, table in enumerate(tables):
                                     text = "\n".join([
                                         " | ".join([cell if cell else "" for cell in row]) for row in table
@@ -80,13 +81,14 @@ def extract_tables_from_directory_to_json(directory, output_path):
                                         "content": text
                                     })
                 except Exception as e:
-                    print(f"❌ Fehler: {file_path} konnte nicht gelesen werden. {e}")
+                    print(f"❌ Error: {file_path} could not be read. {e}")
 
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(extracted_data, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ {len(extracted_data)} Datensätze wurden in die JSON-Datei gespeichert: {output_path}")
+    print(f"✅ {len(extracted_data)} records saved to JSON file: {output_path}")
 
 
 if __name__ == "__main__":
     extract_tables_from_directory_to_json("data", "structured_data.json")
+
