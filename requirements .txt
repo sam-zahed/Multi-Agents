@@ -1,20 +1,21 @@
-# Standard-Bibliotheken
+markdown
+ Standard libraries
 python-dotenv
 requests
 
-# Datenverarbeitung
+ Data processing
 pandas
 matplotlib
 seaborn
 
-# PDF-Verarbeitung
+ PDF processing
 pdfplumber
 
-# Hugging Face / Embeddings
+ Hugging Face / Embeddings
 huggingface_hub
 sentence-transformers
 
-# LangChain und zugehörige Tools
+ LangChain and related tools
 langchain
 langchain_core
 langchain_google_genai
@@ -22,17 +23,17 @@ langchain_chroma
 langchain_huggingface
 langchain_tavily
 
-# LangGraph & Supervisor
+ LangGraph & Supervisor
 langgraph
 langgraph-supervisor
 
-# Chroma Vektordatenbank
+ Chroma Vector Database
 chromadb
 
-# Gradio für UI
+ Gradio for UI
 gradio
 
-# Optional: für Debugging und Logs
+ Optional: for debugging and logs
 typing_extensions
 
-# pip install -r requirements.txt
+ pip install -r requirements.txt
